@@ -207,6 +207,7 @@ require('lazy').setup({
       })
     end,
   },
+  { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
   {
     "zbirenbaum/copilot-cmp",
     after = { "copilot.lua" },
