@@ -232,7 +232,7 @@ require('lazy').setup({
     end,
   },
   { "catppuccin/nvim",     name = "catppuccin", priority = 1000 },
-  { "David-Kunz/gen.nvim", name = "gen", modeul = 'codellama:36b' },
+  { "David-Kunz/gen.nvim", name = "gen" },
   {
     "zbirenbaum/copilot-cmp",
     after = { "copilot.lua" },
@@ -584,3 +584,6 @@ cmp.setup {
 
 -- The line beneath this is called `modeline`. See `:help modeline`
 -- vim: ts=2 sts=2 sw=2 et
+
+-- [[ configure gen.nvim ]]
+require('gen').model = 'codellama:34b'
